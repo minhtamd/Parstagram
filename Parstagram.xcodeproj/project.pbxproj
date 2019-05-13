@@ -97,12 +97,11 @@
 		ED46D16B22894B3A005B4009 /* Parstagram */ = {
 			isa = PBXGroup;
 			children = (
-				ED46D16C22894B3A005B4009 /* AppDelegate.swift */,
-				ED46D16E22894B3A005B4009 /* ViewController.swift */,
-				ED46D17022894B3A005B4009 /* Main.storyboard */,
 				ED46D17322894B3C005B4009 /* Assets.xcassets */,
-				ED46D17522894B3C005B4009 /* LaunchScreen.storyboard */,
+				ED46D16C22894B3A005B4009 /* AppDelegate.swift */,
 				ED46D17822894B3C005B4009 /* Info.plist */,
+				ED46D19A22894BD2005B4009 /* Storyboards */,
+				ED46D19B22894C03005B4009 /* ViewControllers */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -123,6 +122,23 @@
 				ED46D18E22894B3C005B4009 /* Info.plist */,
 			);
 			path = ParstagramUITests;
+			sourceTree = "<group>";
+		};
+		ED46D19A22894BD2005B4009 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ED46D17522894B3C005B4009 /* LaunchScreen.storyboard */,
+				ED46D17022894B3A005B4009 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ED46D19B22894C03005B4009 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED46D16E22894B3A005B4009 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
