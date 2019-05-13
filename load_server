@@ -1,0 +1,3 @@
+#!/bin/bash
+
+parse-dashboard --appId myParstagram --masterKey peepeegram --serverURL "https://evening-coast-10188.herokuapp.com/parse"
