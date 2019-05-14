@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
         loginBoxView.layer.masksToBounds = true
         signInButton.layer.cornerRadius = 5
         signInButton.layer.masksToBounds = true
+        passwordTextField.isSecureTextEntry = true
         // Do any additional setup after loading the view.
     }
     
