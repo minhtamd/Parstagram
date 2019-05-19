@@ -134,7 +134,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="506" id="Gi2-YA-SYg" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="506" id="Gi2-YA-SYg" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="506"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gi2-YA-SYg" id="Pgj-CV-LA4">
@@ -161,7 +161,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wjq-Zp-aI9" secondAttribute="bottom" constant="16" id="4MV-10-Rn6"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wjq-Zp-aI9" secondAttribute="bottom" constant="8" id="4MV-10-Rn6"/>
                                                 <constraint firstItem="8uG-aP-sdf" firstAttribute="top" secondItem="Pgj-CV-LA4" secondAttribute="top" id="7N1-Jl-lk6"/>
                                                 <constraint firstItem="rBH-m4-YX2" firstAttribute="top" secondItem="8uG-aP-sdf" secondAttribute="bottom" constant="8" id="7VU-JX-YZa"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wjq-Zp-aI9" secondAttribute="trailing" constant="8" id="Cc5-Lf-GtE"/>
@@ -176,6 +176,40 @@
                                             <outlet property="captionLabel" destination="wjq-Zp-aI9" id="RM3-IM-sAY"/>
                                             <outlet property="photoView" destination="8uG-aP-sdf" id="w9h-TW-osA"/>
                                             <outlet property="usernameLabel" destination="rBH-m4-YX2" id="COo-Db-z98"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="Cdw-xR-Hu8" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="534" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cdw-xR-Hu8" id="VTU-vu-oOC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-We-T3N">
+                                                    <rect key="frame" x="8" y="8" width="78.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKm-MP-Pdi">
+                                                    <rect key="frame" x="92.5" y="8" width="71" height="19"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YKm-MP-Pdi" firstAttribute="top" secondItem="VTU-vu-oOC" secondAttribute="top" constant="8" id="5KZ-Sd-frI"/>
+                                                <constraint firstItem="U9D-We-T3N" firstAttribute="top" secondItem="VTU-vu-oOC" secondAttribute="top" constant="8" id="D0v-Hy-XHZ"/>
+                                                <constraint firstItem="U9D-We-T3N" firstAttribute="leading" secondItem="VTU-vu-oOC" secondAttribute="leading" constant="8" id="KEC-YC-MBS"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YKm-MP-Pdi" secondAttribute="trailing" constant="8" id="aPM-aM-hvj"/>
+                                                <constraint firstItem="YKm-MP-Pdi" firstAttribute="leading" secondItem="U9D-We-T3N" secondAttribute="trailing" constant="6" id="fow-tV-RxV"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YKm-MP-Pdi" secondAttribute="bottom" constant="8" id="vtd-mE-Q9z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="YKm-MP-Pdi" id="y08-xZ-EXi"/>
+                                            <outlet property="nameLabel" destination="U9D-We-T3N" id="16D-Ge-KA7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
