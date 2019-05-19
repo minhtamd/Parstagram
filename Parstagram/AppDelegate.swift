@@ -24,6 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://evening-coast-10188.herokuapp.com/parse"
             })
         )
+        
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let homeNavigationController = main.instantiateViewController(withIdentifier: "HomeNavigationController")
+            
+            window?.rootViewController = homeNavigationController
+        }
+        
         return true
     }
 

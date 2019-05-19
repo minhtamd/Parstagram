@@ -164,6 +164,7 @@
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wjq-Zp-aI9" secondAttribute="bottom" constant="16" id="4MV-10-Rn6"/>
                                                 <constraint firstItem="8uG-aP-sdf" firstAttribute="top" secondItem="Pgj-CV-LA4" secondAttribute="top" id="7N1-Jl-lk6"/>
                                                 <constraint firstItem="rBH-m4-YX2" firstAttribute="top" secondItem="8uG-aP-sdf" secondAttribute="bottom" constant="8" id="7VU-JX-YZa"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wjq-Zp-aI9" secondAttribute="trailing" constant="8" id="Cc5-Lf-GtE"/>
                                                 <constraint firstItem="wjq-Zp-aI9" firstAttribute="top" secondItem="rBH-m4-YX2" secondAttribute="bottom" constant="4" id="LKx-pW-5ZQ"/>
                                                 <constraint firstItem="rBH-m4-YX2" firstAttribute="leading" secondItem="Pgj-CV-LA4" secondAttribute="leading" constant="8" id="OsJ-z1-g5n"/>
                                                 <constraint firstItem="8uG-aP-sdf" firstAttribute="leading" secondItem="Pgj-CV-LA4" secondAttribute="leading" id="Q8y-vs-q6v"/>
@@ -272,7 +273,7 @@
         <!--Navigation Controller-->
         <scene sceneID="LHw-w0-3Hd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qRw-9f-tKc" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="qRw-9f-tKc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xfZ-na-ZwF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
